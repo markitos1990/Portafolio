@@ -85,6 +85,8 @@
     
     .seccion_slogan{
         background-image: url("images/gatos.jpg");
+        background-repeat: none;
+        background-size: cover;
         color: white;
     }
         .colorFondo{
