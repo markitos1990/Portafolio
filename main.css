@@ -1,0 +1,143 @@
+/*IMPORTADOS*/
+
+@import "css/base.css";
+@import "css/hover.css";
+
+
+
+/*CSS*/
+    /*HEADER BLOCK*/
+        .menu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+            .menu_navegacion{
+                display: flex;  
+            }
+                .menu_item{
+                    display: inline-flex;
+                    padding: 10px;
+                }
+                    .menu_enlace{
+                        padding: 12px;
+                    }
+                /*Item 3*/ .press_contact{
+                                color: white;
+                                background-color: #ff4c4c;
+                                border-radius: 10px;
+                            }
+            /*CONTENEDOR DEL MENU HAMBURGUESA*/
+            /*Menu Oculto*/
+        .menu_Movil {
+            position: absolute;
+            right: 0;
+            list-style: none;
+            width: 100%;
+            text-align: center;
+            line-height: 59px;
+            padding: 0;
+            margin-top: 40px;
+            background-color: white;
+        }
+        .menu_contenedorMovil {
+            opacity: 0;
+            z-index: -5;
+            transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+            z-index 0s linear 0.01s;
+            margin-top: -10000px;
+        }
+        .menuListo {
+            visibility: visible;
+            z-index: 999;
+            opacity: 1;
+            margin-top: 0px;
+        }
+        .menu_celularEnlace {
+            background-color: #f9f9f9;
+            color: #16415e;
+            display: block;
+        }
+        .itemMenuMovil {
+            border-bottom: 1px solid #738d9e;
+        }
+        /*cierre de menu oculto*/
+        
+        /*Barra de logo y menu de navegacion*/
+        
+        /*Menu oculto xs y lg*/
+        .contenedor_menu_hamburguesa {
+            display: none;
+        }
+        .menu_Hamburguesa > span:after {
+            content: "";
+            border-bottom: 7px solid #f05351;
+            width: 40px;
+            height: 10px;
+            display: block;
+            cursor: pointer;
+            margin: 5px;
+        }
+        /*Fin de menu oculto xs y lg*/
+        
+    /*MAIN BLOCK*/    
+    
+    .seccion_slogan{
+        background-image: url("images/gatos.jpg");
+        color: white;
+    }
+        .colorFondo{
+            background-color: #0021ff4a;
+            padding: 100px 10px;
+        }
+        .titulo_slogan{
+            padding: 60px 40px 10px 40px;
+            font-size: 50px;
+            font-weight: 700;
+        }
+            .contenedor_slogan{
+                padding: 40px 10px 60px 40px;
+                font-size: 20px;
+            }
+                .parrafo_slogan{
+                    font-size: 25px;
+                    padding: 00px 0px 40px 0px;
+                }
+                .accesoServicios{
+                    color: white;
+                    background-color: #ffbc31;
+                    padding: 12px;
+                    border-radius : 50px;
+                    font-weight: 500;
+                }
+
+
+
+
+
+
+
+
+
+
+/*DESAPARECER MENU PRINCIPAL EN PANTALLA MOVIL*/
+
+    @media screen and (max-width: 700px){
+        .h1{
+            font-size: 30px;
+        }
+        .menu_contenido{
+            display: none;
+        }
+        .contenedor_menu_hamburguesa {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            right: 7%;
+            top: 2%;
+          }
+    }
+
+
+                

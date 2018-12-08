@@ -1,0 +1,13 @@
+/*HOVER CSS*/
+
+
+/*HEADER BLOCK*/
+        .menu_enlace:hover{
+            text-decoration: none;
+            color: #ffbc31;
+        }
+            .accesoServicios:hover{
+                text-decoration: none;
+                color: #ffbc31;
+                background-color: white;    
+            }
